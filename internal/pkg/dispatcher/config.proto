@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package goasyncfunc.server.vmess.dispatcher;
+option csharp_namespace = "goasyncfunc.server.vmess.dispatcher";
+option go_package = "github.com/GoAsyncFunc/server-vmess/internal/pkg/dispatcher";
+option java_package = "com.goasyncfunc.server.vmess.dispatcher";
+option java_multiple_files = true;
+
+message SessionConfig {
+  reserved 1;
+}
+
+message Config {
+  SessionConfig settings = 1;
+}
