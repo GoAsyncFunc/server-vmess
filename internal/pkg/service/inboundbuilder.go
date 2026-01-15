@@ -28,7 +28,7 @@ func InboundBuilder(config *Config, nodeInfo *api.NodeInfo) (*core.InboundHandle
 	inboundDetourConfig.Tag = fmt.Sprintf("vmess_%d", vmessInfo.ServerPort)
 
 	// Protocol
-	inboundDetourConfig.Protocol = "vmess"
+	inboundDetourConfig.Protocol = api.Vmess
 
 	// Settings
 	// VMess needs a VMessServerConfig deserialized into Settings
